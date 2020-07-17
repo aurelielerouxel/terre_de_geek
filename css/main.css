@@ -86,6 +86,48 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* General rules */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Utility classes */
+
+
+
+Header {
+  background-color: red;
+}
+
+
+
+Nav {
+  background-color: blue;
+}
+
+
+
+Main {
+  background-color: green;
+}
+
+
+
+footer {
+  background-color: yellow;
+}
+
+
+
+/* Index */
+
+
+
+/* Single */
+
+
 
 /* ==========================================================================
    Helper classes
