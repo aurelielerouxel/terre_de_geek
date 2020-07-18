@@ -88,46 +88,50 @@ textarea {
    ========================================================================== */
 /* General rules */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 2px;
+  padding: 0; 
+  list-style: none; 
 }
-
 
 /* Utility classes */
 
 
+.menu {
+  display: flex;
+  justify-content: space-between;
+  background-color:black;
+}
+
+.center {
+  text-align: center;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.imageflottante {
+  float: left;
+}
+
+.price {
+  color: red;
+}
 
 Header {
   background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-
-
-Nav {
-  background-color: blue;
-}
-
-
 
 Main {
   background-color: green;
 }
 
-
-
 footer {
   background-color: yellow;
 }
-
-
-
-/* Index */
-
-
-
-/* Single */
-
-
 
 /* ==========================================================================
    Helper classes
