@@ -94,12 +94,18 @@ textarea {
 }
 
 /* Utility classes */
+.textcolorblue {
+  color: #14213D;
+}
 
+.textcolorgrey {
+  color: #8f8f8f;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
-  background-color:black;
+  background-color: #14213D;
 }
 
 .center {
@@ -118,19 +124,27 @@ textarea {
   color: red;
 }
 
+.backgroundwhite {
+  background-color: white;
+}
+
 Header {
-  background-color: red;
+  /* background-color: #ffffff; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 Main {
-  background-color: green;
+  background-color: #8f8f8f;
 }
 
-footer {
-  background-color: yellow;
+a {
+  color: #8f8f8f;
+}
+
+h1, h2, h3 {
+  color: #14213D;
 }
 
 /* ==========================================================================
