@@ -90,60 +90,54 @@ textarea {
 * {
   margin: 3px;
   padding: 2px; 
-  list-style: none; 
-}
-
-/* Utility classes */
-.textcolorblue {
-  color: #14213D;
-}
-
-.textcolorgrey {
-  color: #8f8f8f;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  background-color: #14213D;
-}
-
-.center {
-  text-align: center;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.imageflottante {
-  float: left;
-}
-
-.price {
-  color: red;
-}
-
-.backgroundwhite {
-  background-color: white;
+  list-style: none;    /*remove bullets from lists*/  
 }
 
 Header {
-  display: flex;
+  display: flex;     /*site name and logo placement*/                
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
 }
 
 Main {
-  background-color: #8f8f8f;
+  background-color: #8f8f8f;    /*background main sales and legal notices*/
 }
 
-a {
+a {   /*text color in nav and footer*/
   color: #8f8f8f;
 }
 
-h1, h2, h3 {
+h1, h2, h3 {    /*Text color title*/
   color: #14213D;
+}
+
+/* Utility classes colors*/
+.price {    /*price color in the home page*/
+  color: red;
+}
+
+.backgroundwhite {    /*Background header and computer page*/
+  background-color: white;
+}
+
+/* Utility classes*/
+
+.menu {   /*placing links in the menu and the footer*/
+  display: flex;
+  justify-content: space-between;
+  background-color: #14213D; 
+}
+
+.center {   /*title placement h1 and h2*/
+  text-align: center; 
+}
+
+.justify {    /*placement of text on the home page*/
+  text-align: justify; 
+}
+
+.imageflottante {   /*placement images on the home page*/
+  float: left; 
 }
 
 /* ==========================================================================
