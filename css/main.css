@@ -107,7 +107,7 @@ a {   /*text color in nav and footer*/
   color: #8f8f8f;
 }
 
-h1, h2, h3 {    /*Text color title*/
+h1, h2, h3 {    /*text color title*/
   color: #14213D;
 }
 
@@ -118,6 +118,10 @@ h1, h2, h3 {    /*Text color title*/
 
 .backgroundwhite {    /*Background header and computer page*/
   background-color: white;
+}
+
+.textcolorgrey {
+  color: #8f8f8f;
 }
 
 /* Utility classes*/
