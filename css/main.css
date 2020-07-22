@@ -87,20 +87,40 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* General rules */
-* {
-  margin: 3px;
-  padding: 2px; 
-  list-style: none;    /*remove bullets from lists*/  
+* { 
+  list-style: none;
+  text-decoration: none;    /*remove bullets from lists*/  
 }
 
-Header {
+header {
   display: flex;     /*site name and logo placement*/                
   justify-content: space-around;
   align-items: center; 
 }
 
-Main {
-  background-color: #8f8f8f;    /*background main sales and legal notices*/
+/* nav {
+
+} */
+
+article {
+  background-color: #8f8f8f;
+  border: solid;
+  border-color: #14213D;
+  border-width: 0.5em;
+  border-radius: 2%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 120px;
+  height: auto;
+}
+
+main {
+  /* background-color: #8f8f8f;    background main sales and legal notices */
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 a {   /*text color in nav and footer*/
@@ -111,8 +131,13 @@ h1, h2, h3 {    /*text color title*/
   color: #14213D;
 }
 
+footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /* Utility classes colors*/
-.price {    /*price color in the home page*/
+.importantmessage {    /*price color in the home page*/
   color: red;
 }
 
@@ -143,6 +168,31 @@ h1, h2, h3 {    /*text color title*/
 .imageflottante {   /*placement images on the home page*/
   float: left; 
 }
+
+/* Media query */
+@media screen and (min-width: 556px) {
+
+}
+
+@media screen and (min-width: 786px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+  
+}
+
+
+/* .btn { création bouton
+  color: red;
+  border-radius: 3px;
+  font-weight: bold;
+} */
+
+/* .btn:hover { /*effet de style du bouton */
+  /* background-color: white; */
+  /* color: black; */
+/* } */
 
 /* ==========================================================================
    Helper classes
