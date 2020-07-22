@@ -86,54 +86,60 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* General rules */
+/* General rules */     /*remove bullets from lists*/ 
 * { 
   list-style: none;
-  text-decoration: none;    /*remove bullets from lists*/  
+  text-decoration: none;   
 }
 
+/* Body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav  */
+
+/* Header */      /*site name and logo placement*/ 
 header {
-  display: flex;     /*site name and logo placement*/                
+  display: flex;                    
   justify-content: space-around;
   align-items: center; 
 }
 
-/* nav {
-
-} */
-
-article {
-  background-color: #8f8f8f;
+/* Main  */      
+main {
+  background-color: #8f8f8f;     
   border: solid;
   border-color: #14213D;
   border-width: 0.5em;
-  border-radius: 2%;
+  border-radius: 5px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 5px; 
+  padding-right: 5px; 
 }
 
+/* Footer */
+
+/* Article */
+
+/* Image */
 img {
-  width: 120px;
+  width: 100px;
   height: auto;
 }
 
-main {
-  /* background-color: #8f8f8f;    background main sales and legal notices */
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-}
-
-a {   /*text color in nav and footer*/
+/* A  */      /*text color in nav and footer*/
+a {   
   color: #8f8f8f;
 }
 
+/* Title */
 h1, h2, h3 {    /*text color title*/
   color: #14213D;
-}
-
-footer {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 /* Utility classes colors*/
