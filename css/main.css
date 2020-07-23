@@ -175,6 +175,10 @@ h1, h2, h3 {    /*text color title*/
   float: left; 
 }
 
+.linespace {
+  line-height: 2em;
+}
+
 /* Media query */
 @media screen and (min-width: 556px) {
 

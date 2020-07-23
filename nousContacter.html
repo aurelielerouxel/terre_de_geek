@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/icone_technologies.png" type="image/x-icon">
     <title>Mentions Légales</title>
 </head>
 <body>
@@ -27,8 +28,43 @@
           </ul>
         </div>
     </nav>
-    <main>
-
+    <main class="center">
+        <form class="linespace" action="" method="POST">
+            <div>
+                <label for="">Votre nom : </label>
+                <input type="text" name="" id="" placeholder="Ex: Simpsons" minlength="2" maxlength="40" required>
+            </div>
+            <div>
+                <label for="">Votre prénom : </label>
+                <input type="text" name="" id="" placeholder="Ex: Homer" minlength="2" maxlength="40" required>
+            </div>
+            <div>
+                <label for="">Votre âge : </label>
+                <input type="number" name="" id="" placeholder="Ex: 00" min="18" required>
+            </div>
+            <div>
+                <label for="">Votre numéro de téléphone : </label>
+                <input type="number" name="" id="" placeholder="Ex: 00.00.00.00.00" required>
+            </div>
+            <div>
+                <label for="">Votre adresse mail : </label>
+                <input type="email" name="" id="" placeholder="Ex: boloss@bdg.com" required>
+            </div>
+            <div>
+                <label for="">Information </label>
+                <input type="radio" name="" id="">
+                <label for="">Réclamation </label>
+                <input type="radio" name="" id="">
+                <label for="">Partenariat </label>
+                <input type="radio" name="" id="">
+                <label for="">Autre </label>
+                <input type="radio" name="" id="">
+            </div>
+            <div>
+                <label for="message"></label>
+                <textarea name="" id="" placeholder="Tapez votre message, 1000 caractères maximum." cols="40" rows="15" maxlength="1000" required></textarea>
+            </div>
+        </form>
     </main>
     <footer class="menu">
         <div>
