@@ -109,7 +109,7 @@ header {
 
 /* Main  */      
 main {
-  background-color: #8f8f8f;     
+  background-color: #e5e5e5;     
   border: solid;
   border-color: #14213D;
   border-width: 0.5em;
@@ -134,7 +134,7 @@ img {
 
 /* A  */      /*text color in nav and footer*/
 a {   
-  color: #8f8f8f;
+  color: #e5e5e5;
 }
 
 /* Title */
@@ -162,7 +162,7 @@ video {
 }
 
 .textcolorgrey {
-  color: #8f8f8f;
+  color: #e5e5e5;
 }
 
 /* Utility classes*/
