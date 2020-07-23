@@ -142,6 +142,16 @@ h1, h2, h3 {    /*text color title*/
   color: #14213D;
 }
 
+/* Video */
+video {
+  width:300px; 
+  height:200px;
+  border: solid;
+  border-color: #14213D;
+  border-width: 0.2em;
+  border-radius: 5px;
+}
+
 /* Utility classes colors*/
 .importantmessage {    /*price color in the home page*/
   color: red;
@@ -173,6 +183,10 @@ h1, h2, h3 {    /*text color title*/
 
 .imageflottante {   /*placement images on the home page*/
   float: left; 
+}
+
+.linespace {
+  line-height: 2em;
 }
 
 /* Media query */
