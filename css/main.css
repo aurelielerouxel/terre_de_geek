@@ -152,6 +152,22 @@ video {
   border-radius: 5px;
 }
 
+table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+td, th {
+  border: solid 1px #14213D;
+}
+
+caption {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #14213D;
+}
+
 /* Utility classes colors*/
 .importantmessage {    /*price color in the home page*/
   color: red;
