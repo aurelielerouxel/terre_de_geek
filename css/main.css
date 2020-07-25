@@ -102,6 +102,10 @@ body {
 }
 
 /* Nav  */
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 /* Header */      /*site name and logo placement*/ 
 header {
@@ -144,6 +148,7 @@ a {
 /* Title */
 h1, h2, h3 {    /*text color title*/
   color: #14213D;
+  margin-bottom: 10px;
 }
 
 /* Video */
@@ -173,19 +178,19 @@ caption {
 }
 
 /* Utility classes colors*/
-.importantmessage {    /*price color in the home page*/
+.importantMessage {    /*price color in the home page*/
   color: red;
 }
 
-.backgroundwhite {    /*Background header and computer page*/
+.backgroundWhite {    /*Background header and computer page*/
   background-color: white;
 }
 
-.textcolorgrey {
+.textColorGrey {
   color: #e5e5e5;
 }
 
-.textcolorblue {
+.textColorBlue {
   color: #14213D;
   font-weight: bold;
 }
@@ -193,7 +198,10 @@ caption {
 /* Utility classes*/
 .menu {   /*placing links in the menu and the footer*/
   display: flex;
-  padding: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #14213D;
 }
 
@@ -205,15 +213,25 @@ caption {
   text-align: justify; 
 }
 
-.imageflottante {   /*placement images on the home page*/
+.imageFlottante {   /*placement images on the home page*/
   float: left; 
 }
 
-.linespace {
+.lineSpace {
   line-height: 2em;
 }
 
+.h2 {
+  display: flex;
+}
+
+
+
 /* Media query */
+@media screen and (min-width: 540px) {
+
+}
+
 @media screen and (min-width: 720px) {
   /* nav div ul { 
     background-color: #14213D;
@@ -230,7 +248,7 @@ caption {
 
   h1 {
     font-size: 4em;
-  } */
+  } 
 
   main {
     font-size: 1.2em;
@@ -268,6 +286,24 @@ caption {
     display: flex;
     justify-content: space-around;
   }
+
+  .noBorder {
+    border: none;
+    background-color: white;
+  }
+
+  form {
+    font-size: 1.5em;
+  }
+
+  textarea {
+    width: 500px;
+  }
+
+  input {
+    width: 125px;
+    height: 25px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -279,11 +315,27 @@ caption {
 
   }
 
-  main section article {
+  main {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     justify-content: flex-start;
-    /* align-items: center; */
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  article {
+    border: outset;
+    border-width: 0.2em;
+    border-color: #14213D;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 200px 250px 250px 250px;
+  }
+
+  h2 {
+
   }
 
   footer {
