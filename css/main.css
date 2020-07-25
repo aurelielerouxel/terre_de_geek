@@ -102,6 +102,10 @@ body {
 }
 
 /* Nav  */
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 /* Header */      /*site name and logo placement*/ 
 header {
@@ -193,7 +197,10 @@ caption {
 /* Utility classes*/
 .menu {   /*placing links in the menu and the footer*/
   display: flex;
-  padding: 10px;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #14213D;
 }
 
@@ -213,7 +220,17 @@ caption {
   line-height: 2em;
 }
 
+.h2 {
+  display: flex;
+}
+
+
+
 /* Media query */
+@media screen and (min-width: 540px) {
+
+}
+
 @media screen and (min-width: 720px) {
   /* nav div ul { 
     background-color: #14213D;
@@ -230,7 +247,7 @@ caption {
 
   h1 {
     font-size: 4em;
-  } */
+  } 
 
   main {
     font-size: 1.2em;
@@ -268,6 +285,24 @@ caption {
     display: flex;
     justify-content: space-around;
   }
+
+  .noBorder {
+    border: none;
+    background-color: white;
+  }
+
+  form {
+    font-size: 1.5em;
+  }
+
+  textarea {
+    width: 500px;
+  }
+
+  input {
+    width: 125px;
+    height: 25px;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -279,11 +314,17 @@ caption {
 
   }
 
-  main section article {
+  main {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
     justify-content: flex-start;
-    /* align-items: center; */
+    align-items: center;
+  }
+
+  article {
+    border: outset;
+    border-width: 0.2em;
+    border-color: #14213D;
   }
 
   footer {
