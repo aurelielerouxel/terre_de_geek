@@ -86,10 +86,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+
 /* General rules */     /*remove bullets from lists*/ 
 * { 
   list-style: none;
-  text-decoration: none;   
+  text-decoration: none;
+  font-family: 'Recursive', sans-serif;   
 }
 
 /* Body */
