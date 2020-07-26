@@ -66,7 +66,7 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
+Remove default fieldset styles.
  */
 
 fieldset {
@@ -87,7 +87,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
    
-
 /* General rules */     /*remove bullets from lists*/ 
 * { 
   list-style: none;
@@ -101,7 +100,7 @@ body {
   padding: 0;
 }
 
-/* Nav  */
+/* Nav & footer menus rule */
 ul {
   margin: 0;
   padding: 0;
@@ -130,11 +129,10 @@ main {
   padding-bottom: 30px; 
 }
 
-/* Footer */
+/* Footer - size text copyright */
 .fontWeight {
   font-weight: 900;
 }
-/* Article */
 
 /* Image */
 img {
@@ -159,20 +157,6 @@ h1, h2, h3 {    /*text color title*/
 h1:hover {
   color: #fca311;
 }
-/* div
-{
-    width: 200px;
-    height: 150px;
-    background-color: blue;
-    transition-property: background-color;
-    transition-duration: 1s;
-    transition-delay: 0.4s; /* Démarre au bout de 0,4s */
-} */
-
-/* div:hover
-{
-    background-color: green;
-} */
 
 /* Video */
 video {
@@ -184,6 +168,7 @@ video {
   border-radius: 5px;
 }
 
+/* Array in prestation page  */
 table {
   border-collapse: collapse;
   margin-top: 10px;
@@ -194,6 +179,7 @@ td, th {
   border: solid 1px #14213D;
 }
 
+/* Légend of array in prestation page */
 caption {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -266,10 +252,7 @@ caption {
 }
 
 @media screen and (min-width: 720px) {
-  /* nav { 
-
-  } */
-
+  /* general rules  */
   header {
     margin: 0;
     padding: 0;
@@ -278,10 +261,6 @@ caption {
   h1 {
     font-size: 4em;
   } 
-
-  main {
-    font-size: 1.2em;
-  }
 
   h2 {
     font-size: 2em;
@@ -292,12 +271,21 @@ caption {
     background-color: #fca311;
   } 
 
+  h3 {
+    text-decoration: underline;
+  }
+
+  main {
+    font-size: 1.2em;
+  }
+
   section {
     padding-bottom: 2em;
   }
-
-  h3 {
-    text-decoration: underline;
+ 
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   img {
@@ -306,9 +294,11 @@ caption {
     border-color: #14213D;
   } 
 
-  p {
-    padding-left: 10px;
-    padding-right: 10px;
+  figure img {
+    border-radius: 250px;
+    border-width: 5px;
+    width: 250px;
+    height: 250px;
   }
 
   footer {
@@ -316,11 +306,7 @@ caption {
     justify-content: space-around;
   }
 
-  .noBorder {
-    border: none;
-    background-color: white;
-  }
-
+/* Contact form  */
   form {
     font-size: 1.5em;
   }
@@ -333,9 +319,16 @@ caption {
     width: 125px;
     height: 25px;
   }
+
+  /* Utility classes */
+  .noBorder {
+    border: none;
+    background-color: white;
+  }
 }
 
 @media screen and (min-width: 960px) {
+  /* General rules  */
   nav {
     padding: 0; 
     margin: 0;
@@ -351,68 +344,68 @@ caption {
     margin: 0 40px;
   }
 
-  /* header {
-  } */
-
-  main {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* flex-grow: 1; */
+  /* Size message text in contact form */
+  textarea {
+    width: 875px;
   }
 
-  article {
-    /* border: outset; */
-    /* border-width: 0.2em; */
-    /* border-color: #14213D; */
-    height: 100px;
-  }
-
+  /* utility classes  */
   .grid {
     display: grid;
     grid-template-columns: 0px 275px 275px 275px;
-    height: 450px;
-    justify-content: space-evenly;
+    height: 600px;
+    justify-content: space-around;
     margin: 0;
-    padding: 0;
+    padding-top: 100px;
   }
 
   .h2 {
     position: relative;
-    top: -150px;
-    left: 250px;
-    height: 100px;
-    width: 300px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    top: -75px;
+    left: 125px;
+    height: 50px;
+    width: 600px;
     padding: 0;
     margin: 0;
+    padding-right: 20px;
   }
 
-  footer {
-    
-  }  
+  .imageFlottante {
+    float: none;
+  }
+ 
 }
 
 @media screen and (min-width: 1140px) {
+  /* General rules */
   nav {
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 2em;
   }
 
-  header {
-
-  }
-
   main {
-
+    margin: 20px;
   }
 
-  footer {
-    
-  }  
+  form {
+    margin-right: 50px;
+  }
+
+  /* Utility classes */
+  .grid {
+    display: grid;
+    grid-template-columns: 0px 325px 325px 325px;
+    height: 550px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding-top: 100px;
+  }
+
+  .h2 {
+    position: relative;
+    top: -75px;
+    left: 200px;
+  }
 }
 
 /* ==========================================================================
