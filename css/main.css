@@ -248,7 +248,10 @@ caption {
 
 /* Media query */
 @media screen and (min-width: 540px) {
-
+  iframe {
+    width: 400px;
+    height: 200px;
+  }
 }
 
 @media screen and (min-width: 720px) {
@@ -387,8 +390,18 @@ caption {
     margin: 20px;
   }
 
+/* Contact form */
   form {
     margin-right: 50px;
+  }
+
+  /* Size message text in contact form */
+  textarea {
+    width: 1000px;
+  }
+
+  table {
+    width: 1050px;
   }
 
   /* Utility classes */
