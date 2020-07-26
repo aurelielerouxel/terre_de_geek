@@ -245,13 +245,28 @@ caption {
   color: #fca311;
 }
 
+/* Social médias links images */
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
 
 /* Media query */
 @media screen and (min-width: 540px) {
+  
+/* Video for 540px format */
   iframe {
     width: 400px;
     height: 200px;
   }
+}
+
+.socialMedia {
+
 }
 
 @media screen and (min-width: 720px) {
