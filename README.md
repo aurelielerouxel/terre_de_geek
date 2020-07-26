@@ -54,4 +54,4 @@ Vous rendrez également les documents de maquettage, à savoir les wireframes, l
 - +++ Intégrer des fonts grâce à Google Fonts pour rendre les titres et le contenu plus accrocheurs.
 - *Réalisation de wireframes pour toutes les versions du site.*
 - *Usage des media query pour la gestion du responsive.*
-- +++ *Essayer de mettre en place une transition ou une animation. Par exemple, intégrez un boutton qui grossit légèrement quand l’utilisateur le survol avec sa souris.*
+- +++ *Mettre en place une transition ou une animation.*

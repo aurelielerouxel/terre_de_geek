@@ -131,7 +131,9 @@ main {
 }
 
 /* Footer */
-
+.fontWeight {
+  font-weight: 900;
+}
 /* Article */
 
 /* Image */
@@ -148,8 +150,29 @@ a {
 /* Title */
 h1, h2, h3 {    /*text color title*/
   color: #14213D;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-delay: 0.4s;
   margin-bottom: 10px;
 }
+
+h1:hover {
+  color: #fca311;
+}
+/* div
+{
+    width: 200px;
+    height: 150px;
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-delay: 0.4s; /* Démarre au bout de 0,4s */
+} */
+
+/* div:hover
+{
+    background-color: green;
+} */
 
 /* Video */
 video {
@@ -225,6 +248,16 @@ caption {
   display: flex;
 }
 
+.btn { 
+  color: #fca311; 
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.btn:hover { 
+  background-color: red;
+  color: #fca311;
+}
 
 
 /* Media query */
@@ -233,12 +266,8 @@ caption {
 }
 
 @media screen and (min-width: 720px) {
-  /* nav div ul { 
-    background-color: #14213D;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1em;
+  /* nav { 
+
   } */
 
   header {
@@ -308,34 +337,58 @@ caption {
 
 @media screen and (min-width: 960px) {
   nav {
-    
+    padding: 0; 
+    margin: 0;
+    text-align: center; 
+    font-size: 1.2em;
+  }
+  nav li {
+    display: inline;
+    list-style: none;
+  }
+  nav a {
+    display:inline-block;
+    margin: 0 40px;
   }
 
-  header {
-
-  }
+  /* header {
+  } */
 
   main {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-grow: 1;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* flex-grow: 1; */
   }
 
   article {
-    border: outset;
-    border-width: 0.2em;
-    border-color: #14213D;
+    /* border: outset; */
+    /* border-width: 0.2em; */
+    /* border-color: #14213D; */
+    height: 100px;
   }
 
   .grid {
     display: grid;
-    grid-template-columns: 200px 250px 250px 250px;
+    grid-template-columns: 0px 275px 275px 275px;
+    height: 450px;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
   }
 
-  h2 {
-
+  .h2 {
+    position: relative;
+    top: -150px;
+    left: 250px;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   footer {
@@ -344,9 +397,9 @@ caption {
 }
 
 @media screen and (min-width: 1140px) {
-  nav div ul {
-    display: flex;
-    justify-content: space-around;
+  nav {
+    font-size: 1.5em;
+    line-height: 2em;
   }
 
   header {
@@ -361,18 +414,6 @@ caption {
     
   }  
 }
-
-
-/* .btn { création bouton
-  color: red;
-  border-radius: 3px;
-  font-weight: bold;
-} */
-
-/* .btn:hover { /*effet de style du bouton */
-  /* background-color: white; */
-  /* color: black; */
-/* } */
 
 /* ==========================================================================
    Helper classes
