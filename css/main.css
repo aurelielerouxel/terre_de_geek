@@ -265,10 +265,6 @@ caption {
   }
 }
 
-.socialMedia {
-
-}
-
 @media screen and (min-width: 720px) {
   /* general rules  */
   header {
@@ -362,6 +358,9 @@ caption {
     margin: 0 40px;
   }
 
+  footer {
+    margin-top: 20px;
+  }
   /* Size message text in contact form */
   textarea {
     width: 875px;
