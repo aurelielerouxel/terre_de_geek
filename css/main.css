@@ -66,7 +66,7 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
+Remove default fieldset styles.
  */
 
 fieldset {
@@ -100,6 +100,7 @@ body {
   padding: 0;
 }
 
+/* Nav & footer menus rule */
 ul {
   margin: 0;
   padding: 0;
@@ -128,7 +129,7 @@ main {
   padding-bottom: 30px; 
 }
 
-/* Footer */
+/* Footer - size text copyright */
 .fontWeight {
   font-weight: 900;
 }
@@ -167,6 +168,7 @@ video {
   border-radius: 5px;
 }
 
+/* Array in prestation page  */
 table {
   border-collapse: collapse;
   margin-top: 10px;
@@ -177,6 +179,7 @@ td, th {
   border: solid 1px #14213D;
 }
 
+/* Légend of array in prestation page */
 caption {
   font-size: 1.5em;
   margin-bottom: 10px;
@@ -249,6 +252,7 @@ caption {
 }
 
 @media screen and (min-width: 720px) {
+  /* general rules  */
   header {
     margin: 0;
     padding: 0;
@@ -257,10 +261,6 @@ caption {
   h1 {
     font-size: 4em;
   } 
-
-  main {
-    font-size: 1.2em;
-  }
 
   h2 {
     font-size: 2em;
@@ -271,12 +271,21 @@ caption {
     background-color: #fca311;
   } 
 
+  h3 {
+    text-decoration: underline;
+  }
+
+  main {
+    font-size: 1.2em;
+  }
+
   section {
     padding-bottom: 2em;
   }
-
-  h3 {
-    text-decoration: underline;
+ 
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   img {
@@ -292,16 +301,12 @@ caption {
     height: 250px;
   }
 
-  p {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
   footer {
     display: flex;
     justify-content: space-around;
   }
 
+/* Contact form  */
   form {
     font-size: 1.5em;
   }
@@ -315,6 +320,7 @@ caption {
     height: 25px;
   }
 
+  /* Utility classes */
   .noBorder {
     border: none;
     background-color: white;
@@ -322,6 +328,7 @@ caption {
 }
 
 @media screen and (min-width: 960px) {
+  /* General rules  */
   nav {
     padding: 0; 
     margin: 0;
@@ -337,10 +344,12 @@ caption {
     margin: 0 40px;
   }
 
+  /* Size message text in contact form */
   textarea {
     width: 875px;
   }
 
+  /* utility classes  */
   .grid {
     display: grid;
     grid-template-columns: 0px 275px 275px 275px;
@@ -368,6 +377,7 @@ caption {
 }
 
 @media screen and (min-width: 1140px) {
+  /* General rules */
   nav {
     font-size: 1.8em;
     line-height: 2em;
@@ -377,6 +387,11 @@ caption {
     margin: 20px;
   }
 
+  form {
+    margin-right: 50px;
+  }
+
+  /* Utility classes */
   .grid {
     display: grid;
     grid-template-columns: 0px 325px 325px 325px;
@@ -390,10 +405,6 @@ caption {
     position: relative;
     top: -75px;
     left: 200px;
-  }
-
-  form {
-    margin-right: 50px;
   }
 }
 
